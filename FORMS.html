@@ -4,9 +4,28 @@
         <link rel="stylesheet"href="style.css">
     </head>
     <body>
-        <h1>Fill inyour Biodata</h1>
-        <form action="">
-            
+        <h1>Fill in your Biodata</h1>
+        <form method="*">
+            <fieldset>
+                <legend>Biodata</legend>
+                <label for="fullname">Fullname</label>
+                <input type="text" name="Full name" id="fullname">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob">
+                <label for="Male">Male</label>
+                <input type="radio" name="sex" id="male" value="male">
+                <label for="Female">Female</label>
+                <input type="radio" name="sex" id="Female" value="Female">
+                <select id =state>
+                   <option value="Oyo"> Oyo</option>
+                   <option value="Kano"> Kano</option>
+                   <option value="Imo"> Imo</option>
+                </select>
+                <input type="button" value="Submit"> 
+
+            </fieldset>
         </form>
     </body>
 </html>
