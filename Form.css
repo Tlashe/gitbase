@@ -1,0 +1,28 @@
+body{
+    background-color: burlywood;
+}
+h1{
+    font-family: sans-serif;
+    font-style: normal;
+    text-align: justify;
+}
+legend{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:normal;
+    font-size: 20;
+    padding:0% ;
+    height: auto;
+    max-height: 20%;
+    max-width: 40%;
+   
+
+}
+label{
+    font-family: sans-serif;
+    font-style: normal;
+    padding: auto;
+} 
+select{
+    font-family:'Times New Roman', Times, serif;
+    font-style: bold;
+} 
