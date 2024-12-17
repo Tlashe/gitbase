@@ -1,32 +1,64 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>Html form page</title>
         <link rel="stylesheet"href="form.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        
+    <body >
+    <menu>
         <h1>Fill in your Biodata</h1>
         <form method="*">
-            <fieldset>
-                <legend for="Biodata">Biodata</legend>
-                <label for="fullname">Fullname</label>
-                <input type="text" name="Full name" id="fullname">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email">
-                <label for="dob">Date of Birth</label>
-                <input type="date" name="dob" id="dob">
-                <label for="Male">Male</label>
+          <fieldset> 
+         <div>
+            <legend for="Biodata">Biodata</legend>
+           </div>  
+           <div class="name">
+                 <label for="Firstname"> Firstname</label>
+                  <input type="text"  name="firstname" id="name">
+            </div>
+            <div>
+                  <label for="Lastname"> Lastname</label>
+                  <input type="text"  name="lastname" id="name">
+            </div>
+            <div class="Email">  
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email">
+            </div>
+            <div class="Phone-No">  
+                <label for="Phone No">Phone-number</label>
+                <input type="digits" name="Phone number" id="Phone number">
+            </div>
+            <div class="dob"> 
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob">   
+                   </div>
+            <div class="vmi"> 
+                <label for="vmi">Other valid means of id.</label>
+                <input type="text" name="vmi" id="vmi">   
+            </div>       
+            <div class="gender">
+                   <label for="Male">Male</label>
                 <input type="radio" name="sex" id="male" value="male">
                 <label for="Female">Female</label>
-                <input type="radio" name="sex" id="Female" value="Female">
+                <input type="radio" name="sex" id="Female" value="Female">  
+            </div>
                 <select id =state>
-                   <option value="Oyo"> Oyo</option>
-                   <option value="Kano"> Kano</option>
-                   <option value="Imo"> Imo</option>
-                   <option value="Ogun"> Ogun</option>
-                <input type="button" value="Submit"> 
-
-            </fieldset>
+                   <option value="Oyo">Oyo</option>
+                   <option value="Kano">Kano</option>
+                   <option value="Imo">Imo</option>
+                   <option value="Ogun">Ogun</option>
+                   <option value="Ogun">Lagos</option>
+                   <option value="Ogun">Ondo</option>
+                   <option value="Ogun">Kwara</option>
+                   <option value="Ogun">Osun</option>
+                   <option value="Ogun">Port-harcourt</option>
+                   <option value="Ogun">Anambra</option>
+                </select>
+            <p><input type="button" value="Submit"> </p>
+        </fieldset>
+        </menu>
         </form>
     </body>
 </html>
