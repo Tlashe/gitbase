@@ -8,56 +8,64 @@
     </head>
     <body >
     <menu>
-        <h1>Fill in your Biodata</h1>
-        <form method="*">
-          <fieldset> 
-         <div>
+        <h1>Registration Form</h1>
+        <!--<form method="*">-->
+
             <legend for="Biodata">Biodata</legend>
-           </div>  
-           <div class="name">
-                 <label for="Firstname"> Firstname</label>
-                  <input type="text"  name="firstname" id="name">
+         <hr style="background-color:rgb(17, 52, 122) ;height: 1px;"> 
+           <div class="details">
+                 <label for="Firstname">Your Firstname</label>
+                 <input type="text"  name="firstname" id="name" required>
             </div>
             <div>
-                  <label for="Lastname"> Lastname</label>
-                  <input type="text"  name="lastname" id="name">
+                  <label for="Lastname">Your Lastname</label>
+                  <input type="text"  name="lastname" id="name" required>
             </div>
-            <div class="Email">  
+            <div class="details">  
                   <label for="email">Email</label>
-                  <input type="text" name="email" id="email">
+                  <input type="text" name="email" id="email" required>
             </div>
-            <div class="Phone-No">  
+            <div class="details">  
                 <label for="Phone No">Phone-number</label>
-                <input type="digits" name="Phone number" id="Phone number">
+                <input type="number" name="numbers" id="numbers" >
             </div>
-            <div class="dob"> 
+            <div class="details"> 
                     <label for="dob">Date of Birth</label>
                     <input type="date" name="dob" id="dob">   
-                   </div>
-            <div class="vmi"> 
+            </div>
+            <div class="details"> 
+                    <label for="password">Create a Password</label>
+                    <input type="alphanumeric" name="alphanumeric" id="alphanumeric">   
+            </div>
+            <!--<div class="vmi"> 
                 <label for="vmi">Other valid means of id.</label>
                 <input type="text" name="vmi" id="vmi">   
-            </div>       
-            <div class="gender">
-                   <label for="Male">Male</label>
+            </div>-->    
+            <div class="details">
+                <label for="Male">Male</label>
                 <input type="radio" name="sex" id="male" value="male">
                 <label for="Female">Female</label>
                 <input type="radio" name="sex" id="Female" value="Female">  
             </div>
-                <select id =state>
-                   <option value="Oyo">Oyo</option>
-                   <option value="Kano">Kano</option>
-                   <option value="Imo">Imo</option>
-                   <option value="Ogun">Ogun</option>
-                   <option value="Ogun">Lagos</option>
-                   <option value="Ogun">Ondo</option>
-                   <option value="Ogun">Kwara</option>
-                   <option value="Ogun">Osun</option>
-                   <option value="Ogun">Port-harcourt</option>
-                   <option value="Ogun">Anambra</option>
-                </select>
-            <p><input type="button" value="Submit"> </p>
-        </fieldset>
+            <select>
+                <option value="Oyo">Oyo</option>
+                <option value="Kano">Kano</option>
+                <option value="Imo">Imo</option>
+                <option value="Ogun">Ogun</option>
+                <option value="Ogun">Lagos</option>
+                <option value="Ogun">Ondo</option>
+                <option value="Ogun">Kwara</option>
+                <option value="Ogun">Osun</option>
+                <option value="Ogun">Port-harcourt</option>
+                <option value="Ogun">Anambra</option>
+            </select>
+        <hr style="background-color:rgb(17, 52, 122) ;height: 1.2px;">
+         <label for="Personal"><input type="radio" id="Personal" name="account-type">Personal</label>
+        <p><label for="Business"><input type="radio" id="Business" name="account-type">Business</label></p>
+        <hr style="background-color:rgb(17, 52, 122) ;height: 1.5px;">
+        <label>Upload a passport<input type="file"/></label>
+        <p><label for="terms and conditions"><input type="checkbox" id="terms and conditions" required>I agree to the terms and conditions</label></p>
+        <input type="button" value="Submit" id="Submit">
         </menu>
         </form>
     </body>
